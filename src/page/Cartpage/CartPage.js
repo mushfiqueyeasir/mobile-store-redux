@@ -7,9 +7,9 @@ import { useSelector } from "react-redux";
 const CartPage = () => {
   const {cartData} = useSelector((state) => state.cart);
   return (
-    <section className="container mx-auto py-10">
-      <div className="overflow-x-auto">
-        <table className="table">
+    <section className="container mx-auto py-10 ">
+      <div className="overflow-x-auto ">
+        <table className="table -z-10">
           <CartHead />
           <tbody>
             {cartData.map((item, index) => (

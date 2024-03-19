@@ -28,7 +28,7 @@ const Header = ({ menu }) => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box min-w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[10] p-2 shadow bg-base-100 rounded-box min-w-52 "
             >
               <Menu menu={menu} />
             </ul>
@@ -38,11 +38,11 @@ const Header = ({ menu }) => {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-base font-semibold">
+          <ul className="menu menu-horizontal px-1 text-base font-semibold z-[999]">
             <Menu menu={menu} />
           </ul>
         </div>
-        <div className="navbar-end py-4">
+        <div className="navbar-end py-4 pr-4">
           <div className="indicator">
             <span className="indicator-item badge bg-black text-white w-6 h-6 ">
               {cartData.length}
