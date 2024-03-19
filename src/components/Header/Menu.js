@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import SubMenu from "./SubMenu";
 
 const Menu = ({ menu }) => {
@@ -9,9 +9,9 @@ const Menu = ({ menu }) => {
         {Object.values(menu).map((item, index) =>
           typeof item === "string" ? (
             <li key={index}>
-              <Link to={item.toLocaleLowerCase()} className="capitalize">
+              <NavLink to={item.toLocaleLowerCase()} className="capitalize">
                 {item}
-              </Link>
+              </NavLink>
             </li>
           ) : (
             <SubMenu key={index} data={item} title={Object.keys(menu)[index]} />

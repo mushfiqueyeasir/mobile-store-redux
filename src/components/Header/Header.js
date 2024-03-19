@@ -33,12 +33,12 @@ const Header = ({ menu }) => {
               <Menu menu={menu} />
             </ul>
           </div>
-          <Link to="/" className=" text-2xl font-bold">
+          <Link to="/" className=" text-3xl font-bold">
             R<span className="text-red-500">B</span>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 text-base font-semibold">
             <Menu menu={menu} />
           </ul>
         </div>
